@@ -29,7 +29,9 @@ button {
   border: none;
   background-color: inherit;
 }
-
+img {
+  min-width: 100px;
+}
 .header,
 .hero {
   background-color: var(--dark-blue);
@@ -64,7 +66,8 @@ button {
   gap: 40px;
 }
 
-.hero .wide-container * {
+.hero .wide-container *,
+.cards .wide-container * {
   flex: 1;
 }
 
@@ -84,10 +87,6 @@ button {
   color: var(--light-grey);
 }
 
-.hero-img {
-  min-width: 200px;
-}
-
 .hero-btn {
   background-color: var(--light-blue);
   font-size: 18px;
@@ -96,4 +95,20 @@ button {
   font-weight: 900;
   color: var(--almost-white);
   width: 140px;
+}
+
+.cards .wide-container {
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card img {
+  width: 200px;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }

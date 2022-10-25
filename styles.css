@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --dark-blue: #1f2937;
+  --almost-white: #f9faf8;
+  --light-grey: #e5e7eb;
+  --light-blue: #3882f6;
+  --almost-black: #1f2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  background-color: inherit;
+}
+
+.header,
+.hero {
+  background-color: var(--dark-blue);
+  color: var(--almost-white);
+}
+.wide-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  max-width: 1000px;
+  width: 100%;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+.logo .span {
+  color: var(--light-blue);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.hero .wide-container {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero .hero-txt h1 {
+  font-size: 48px;
+}
+
+.hero-txt {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-txt p {
+  font-size: 18px;
+  color: var(--light-grey);
+}
+
+.hero-img {
+  max-width: 500px;
+}
+
+.hero-btn {
+  background-color: var(--light-blue);
+  font-size: 18px;
+  padding: 8px 32px;
+  border-radius: 5px;
+  font-weight: 900;
+  color: var(--almost-white);
+  width: 140px;
+}

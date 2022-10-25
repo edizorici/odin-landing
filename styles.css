@@ -60,11 +60,12 @@ button {
 }
 
 .hero .wide-container {
-  min-height: 500px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-block: 60px;
   gap: 40px;
+}
+
+.hero .wide-container * {
+  flex: 1;
 }
 
 .hero .hero-txt h1 {
@@ -84,7 +85,7 @@ button {
 }
 
 .hero-img {
-  max-width: 500px;
+  min-width: 200px;
 }
 
 .hero-btn {
